@@ -10,15 +10,17 @@
         android:id="@+id/vaccine_detail_app_bar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="0dp">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/vaccine_detail_tool_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:titleCentered="true"
-            app:title="Daftar Vaksin Covid-19"
-            android:background="@color/white"/>
+            app:title="@string/title_vaccines"
+            android:background="@color/white"
+            android:elevation="0dp"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
