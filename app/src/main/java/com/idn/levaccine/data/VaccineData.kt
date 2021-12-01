@@ -73,5 +73,24 @@ object VaccineData {
         )
     )
 
+    private val Dosis = intArrayOf(
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+    )
+
+    private val efektifitas = arrayListOf<Float>(
+        62.1f,
+        95.5f,
+        86.4f,
+        65.3f,
+        78.2f,
+        67.2f,
+        90.1f
+    )
 
 }
