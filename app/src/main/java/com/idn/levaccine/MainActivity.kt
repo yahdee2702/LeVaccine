@@ -7,6 +7,9 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
+import com.idn.levaccine.adapter.PageAdapter
 import com.idn.levaccine.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -20,29 +23,40 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         setSupportActionBar(binding.toolBar)
 
-        val navView: BottomNavigationView = binding.navView
+        binding.vpMain.adapter = PageAdapter(this)
+        val tabList = arrayOf("Home","News")
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
+        TabLayoutMediator(binding.mainTabs,binding.vpMain) { tab, position ->
+            tab.text = tabList[position]
+        }.attach()
 
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home, R.id.navigation_news
-            )
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
-        navController.addOnDestinationChangedListener { controller, destination, arguments ->
-            when(destination.id){
-                R.id.navigation_home -> {
-                    supportActionBar?.title = ""
-                    supportActionBar?.setDisplayUseLogoEnabled(true)
-                    supportActionBar?.setLogo(R.drawable.ic_logo)
-                }
-                else -> {
-                    supportActionBar?.title = destination.label
-                    supportActionBar?.setDisplayUseLogoEnabled(false)
+        binding.mainTabs.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                when(tab?.position) {
+                    0 -> {
+                        supportActionBar?.apply {
+                            setDisplayUseLogoEnabled(true)
+                            setLogo(R.drawable.ic_logo)
+                            title = ""
+                        }
+                    }
+                    else -> {
+                        supportActionBar?.apply {
+                            setDisplayUseLogoEnabled(false)
+                            title = tabList[tab?.position!!]
+                        }
+                    }
                 }
             }
-        }
+
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+
+            }
+
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+
+            }
+
+        })
     }
 }
