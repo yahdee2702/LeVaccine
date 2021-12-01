@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bs_vaccine_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_vaccine_info">
+
+    <TextView
+        android:id="@+id/tv_vaccine_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AstroZeneca"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="14sp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="49dp"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <TextView
+        android:id="@+id/tv_vaccine_effects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Efek paling Umum"
+        app:layout_constraintTop_toBottomOf="@id/tv_vaccine_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"/>
+    
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_vaccine_effects"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
