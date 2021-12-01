@@ -2,7 +2,7 @@ package com.idn.levaccine.data
 
 object VaccineData {
 
-    private val vaccineName = arrayListOf<String>(
+    private val vaccineName = arrayListOf(
         "AstraZeneca",
         "Pfizer",
         "Moderna",
@@ -83,7 +83,7 @@ object VaccineData {
         1
     )
 
-    private val efektifitas = arrayListOf<Float>(
+    private val efektifitas = arrayListOf(
         62.1f,
         95.5f,
         86.4f,
@@ -92,5 +92,6 @@ object VaccineData {
         67.2f,
         90.1f
     )
+
 
 }

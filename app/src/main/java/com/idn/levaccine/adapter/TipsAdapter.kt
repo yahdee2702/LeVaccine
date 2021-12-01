@@ -17,7 +17,7 @@ class TipsAdapter(private val tipsList : ArrayList<TipsInfo>) : RecyclerView.Ada
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.binding.apply {
             imgItemTips.setImageResource(tipsList[position].image)
-            txtItemTips.text = tipsList[position].text
+            tvItemTips.text = tipsList[position].text
         }
     }
 
