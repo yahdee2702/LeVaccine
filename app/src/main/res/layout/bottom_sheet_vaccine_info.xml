@@ -6,15 +6,31 @@
     android:layout_height="wrap_content"
     android:background="@drawable/bg_vaccine_info">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@color/black"
+        app:cardElevation="0dp"
+        />
+
+
     <TextView
         android:id="@+id/tv_vaccine_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="AstroZeneca"
+        android:textColor="@color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:textSize="14sp"
         android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
         android:layout_marginTop="49dp"
         android:fontFamily="@font/poppins_bold"/>
 
@@ -22,19 +38,27 @@
         android:id="@+id/tv_vaccine_effects"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Efek paling Umum"
+        android:text="@string/txt_rsc_side_effects"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/tv_vaccine_title"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins"/>
     
-    <ListView
+    <TextView
+        android:id="@+id/tv_vaccine_list_effects"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tv_vaccine_effects"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
         />
 
 

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="20dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="130dp"
+        android:layout_height="96dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_news_1"
+            android:scaleType="centerCrop"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_news_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_color_1"
+            android:textSize="10sp"
+            android:layout_gravity="top"
+            android:fontFamily="@font/poppins_bold"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="9sp"
+            android:layout_gravity="center"
+            android:maxLines="3"
+            android:fontFamily="@font/poppins_medium"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_news_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textSize="7sp"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

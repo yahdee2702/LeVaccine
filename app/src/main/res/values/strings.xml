@@ -12,6 +12,8 @@
     <string name="txt_rsc_btn_vaccines_list">Macam-Macam Vaksin Covid-19 di Indonesia</string>
     <string name="txt_rsc_tips">Tips dari Kami</string>
     <string name="txt_rsc_vaccine">Vaksin %s</string>
+    <string name="txt_rsc_side_effects">Efek paling Umum</string>
+    <string name="txt_rsc_reporter">Reporter : %s</string>
 
     <string-array name="txt_tips">
         <item>Hindari Covid 19 untuk menjaga keluarga</item>

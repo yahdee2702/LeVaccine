@@ -93,5 +93,22 @@ object VaccineData {
         90.1f
     )
 
+    fun getVaccinesInfo() : ArrayList<VaccineInfo> {
+        val list = arrayListOf<VaccineInfo>()
+        vaccineName.forEachIndexed{i,s ->
+            var txtEffect = ""
+            efekSamping[i].forEachIndexed {i2,s2 ->
+                if(i2 < efekSamping.size-1) {
+                    txtEffect += "* " + s2
+                } else{
+                    txtEffect += "* " + s2 + "\n"
+                }
+            }
 
+            list.add(
+                VaccineInfo(s,txtEffect,Dosis[i], efektifitas[i])
+            )
+        }
+        return list
+    }
 }

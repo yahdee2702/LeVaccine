@@ -28,35 +28,43 @@ class MainActivity : AppCompatActivity() {
 
         TabLayoutMediator(binding.mainTabs,binding.vpMain) { tab, position ->
             tab.text = tabList[position]
-        }.attach()
-
-        binding.mainTabs.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
-            override fun onTabSelected(tab: TabLayout.Tab?) {
-                when(tab?.position) {
-                    0 -> {
-                        supportActionBar?.apply {
-                            setDisplayUseLogoEnabled(true)
-                            setLogo(R.drawable.ic_logo)
-                            title = ""
-                        }
-                    }
-                    else -> {
-                        supportActionBar?.apply {
-                            setDisplayUseLogoEnabled(false)
-                            title = tabList[tab?.position!!]
-                        }
-                    }
+            when(tab.position){
+                0 -> {
+                    tab.setIcon(R.drawable.ic_logo)
+                }
+                1 -> {
+                    tab.setIcon(0)
                 }
             }
+        }.attach()
 
-            override fun onTabUnselected(tab: TabLayout.Tab?) {
-
-            }
-
-            override fun onTabReselected(tab: TabLayout.Tab?) {
-
-            }
-
-        })
+//        binding.mainTabs.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+//            override fun onTabSelected(tab: TabLayout.Tab?) {
+//                when(tab?.position) {
+//                    0 -> {
+//                        supportActionBar?.apply {
+//                            setDisplayUseLogoEnabled(true)
+//                            setLogo(R.drawable.ic_logo)
+//                            title = ""
+//                        }
+//                    }
+//                    else -> {
+//                        supportActionBar?.apply {
+//                            setDisplayUseLogoEnabled(false)
+//                            title = tabList[tab?.position!!]
+//                        }
+//                    }
+//                }
+//            }
+//
+//            override fun onTabUnselected(tab: TabLayout.Tab?) {
+//
+//            }
+//
+//            override fun onTabReselected(tab: TabLayout.Tab?) {
+//
+//            }
+//
+//        })
     }
 }

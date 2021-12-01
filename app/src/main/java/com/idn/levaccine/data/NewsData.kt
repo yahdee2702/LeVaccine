@@ -1,31 +1,22 @@
 package com.idn.levaccine.data
 
 object NewsData {
-    private val titleAll = arrayListOf<String>(
+    private val titleHeadline = arrayListOf<String>(
         "Gawat! 12 Negara Kemasukan Covid Omicron, Ada Tetangga RI",
-        "Soal Ancaman Covid-19 Varian Omicron, Luhut Tegas Tak Mau Lakukan Cara Ini",
-        "Ancaman Corona Varian Omicron dan Upaya Pencegahan Indonesia",
-        "AS Terbitkan Anjuran “Jangan Bepergian” untuk Warganya ke Delapan Negara Afrika",
-        "Jepang Larang Masuk Semua Warga Asing, Cegah Covid Varian Omicron"
     )
 
-    private val dateAll = arrayListOf<String>(
+    private val dateHeadline = arrayListOf<String>(
         "29 November 2021 | 10:30",
-        "Senin, 29 November 2021 | 13:01 WIB",
-        "Senin, 29 November 2021 | 06:12 WIB",
-        "Minggu, 28 November 2021 | 13:32",
-        "Senin, 29 Nov 2021 | 12:01 WIB"
     )
-
-    private val reporter = arrayListOf<String>(
+    private val reporterHeadline = arrayListOf<String>(
         "Thea Fathanah Arbar",
-        "Aprillio Ade Wismoyo",
-        "Kompas.com",
-        "Hari Ariyanti",
-        "CNN Indonesia"
     )
 
-    private val allNews = arrayListOf<String>(
+    private val categoryHeadline = arrayListOf<String>(
+        "Seputar Covid"
+    )
+
+    private val contentHeadline = arrayListOf<String>(
         """ 
             Jakarta, CNBC Indonesia - Organisasi Kesehatan Dunia (WHO) resmi memasukan varian baru B.1.1.529 atau omicron menjadi variant of concern atau VOC (varian yang mengkhawatirkan). dibandingkan varian Alpha, Beta dan Delta.
             Varian baru virus corona awalnya terdeteksi di Afrika Selatan dan kemudian menjalar ke negara sekitar. Kini sudah ditemukan kasus konfirmasi dari Omicron di negara dari benua lain.
@@ -114,6 +105,37 @@ object NewsData {
 
             Tes lebih lanjut akan dilakukan untuk memastikan hal ini. Tetapi, orang-orang terkait kasus sudah dikarantina.
         """.trimIndent(),
+    )
+
+    private val titleAll = arrayListOf<String>(
+        "Soal Ancaman Covid-19 Varian Omicron, Luhut Tegas Tak Mau Lakukan Cara Ini",
+        "Ancaman Corona Varian Omicron dan Upaya Pencegahan Indonesia",
+        "AS Terbitkan Anjuran “Jangan Bepergian” untuk Warganya ke Delapan Negara Afrika",
+        "Jepang Larang Masuk Semua Warga Asing, Cegah Covid Varian Omicron"
+    )
+
+    private val dateAll = arrayListOf<String>(
+        "Senin, 29 November 2021 | 13:01 WIB",
+        "Senin, 29 November 2021 | 06:12 WIB",
+        "Minggu, 28 November 2021 | 13:32",
+        "Senin, 29 Nov 2021 | 12:01 WIB"
+    )
+
+    private val reporterAll = arrayListOf<String>(
+        "Aprillio Ade Wismoyo",
+        "Kompas.com",
+        "Hari Ariyanti",
+        "CNN Indonesia"
+    )
+
+    private val categoryAll = arrayListOf<String>(
+        "Seputar Covid",
+        "Seputar Covid",
+        "Seputar Covid",
+        "Seputar Covid"
+    )
+
+    private val contentAll = arrayListOf<String>(
         """ 
            Kemunculan varian baru virus Corona yaitu varian Omicron di Afrika Selatan dan beberapa tempat lain menimbulkan kewaspadaan di kalangan pemimpin dunia.
 
@@ -274,4 +296,40 @@ object NewsData {
 
         """.trimIndent()
     )
+
+    fun getHeadlineInfo() : ArrayList<NewsInfo> {
+        val list = arrayListOf<NewsInfo>()
+
+        titleHeadline.forEachIndexed{i,s ->
+            list.add(
+                NewsInfo(
+                    s,
+                    dateHeadline[i],
+                    reporterHeadline[i],
+                    categoryHeadline[i],
+                    contentHeadline[i],
+                )
+            )
+        }
+
+        return list
+    }
+
+    fun getAllInfo() : ArrayList<NewsInfo> {
+        val list = arrayListOf<NewsInfo>()
+
+        titleAll.forEachIndexed{i,s ->
+            list.add(
+                NewsInfo(
+                    s,
+                    dateAll[i],
+                    reporterAll[i],
+                    categoryAll[i],
+                    contentAll[i],
+                )
+            )
+        }
+
+        return list
+    }
 }
