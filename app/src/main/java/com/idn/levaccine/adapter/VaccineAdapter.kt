@@ -15,7 +15,7 @@ class VaccineAdapter(private val vaccineList : ArrayList<String>,private val tex
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.binding.apply {
-            txtItemVaccine.text = textFormat.format(vaccineList[position])
+            tvItemVaccine.text = textFormat.format(vaccineList[position])
         }
     }
 
