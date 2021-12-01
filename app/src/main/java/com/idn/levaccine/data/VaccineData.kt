@@ -1,0 +1,77 @@
+package com.idn.levaccine.data
+
+object VaccineData {
+
+    private val vaccineName = arrayListOf<String>(
+        "AstraZeneca",
+        "Pfizer",
+        "Moderna",
+        "Sinovac",
+        "Sinopharm",
+        "Janssen",
+        "Convidecia"
+    )
+
+    private val efekSamping = arrayListOf(
+        arrayListOf(
+            "Nyeri atau sakit saat ditekan di bekas suntikan",
+            "Pembengkakan",
+            "Sakit kepala",
+            "Kemerahan",
+            "Demam",
+            "Gatal",
+            "Mual"
+        ),
+        arrayListOf(
+            "Nyeri atau sakit saat ditekan di bekas suntikan",
+            "Sakit kepala",
+            "Menggigil",
+            "Demam",
+            "Lemas",
+            "Mual"
+        ),
+        arrayListOf(
+            "Nyeri atau sakit saat ditekan di bekas suntikan",
+            "Nyeri otot atau sendi",
+            "Sakit kepala",
+            "Kelelahan",
+            "Menggigil",
+            "Demam",
+            "Mual"
+        ),
+        arrayListOf(
+            "Nyeri atau sakit saat ditekan di bekas suntikan",
+            "Gangguan pada kulit",
+            "Sakit kepala",
+            "Demam",
+            "Diare",
+            "Mual"
+        ),
+        arrayListOf(
+            "Nyeri atau sakit saat ditekan di bekas suntikan",
+            "Sakit kepala",
+            "Kelelahan",
+            "Nyeri otot",
+            "Demam",
+            "Batuk"
+        ),
+        arrayListOf(
+            "Nyeri atau sakit saat ditekan di bekas suntikan",
+            "Gangguan kulit",
+            "Sakit kepala",
+            "Demam",
+            "Diare",
+            "Mual"
+        ),
+        arrayListOf(
+            "Nyeri atau kemerahan",
+            "Sakit kepala",
+            "Kelelahan",
+            "Demam",
+            "Diare",
+            "Mual"
+        )
+    )
+
+
+}
