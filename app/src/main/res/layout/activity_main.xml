@@ -21,7 +21,6 @@
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@android:style/ThemeOverlay.Material.Light"
             app:logo="@drawable/ic_logo"
-            app:title=""
             app:titleCentered="true"
             android:elevation="0dp"
             />

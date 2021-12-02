@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LeVaccine</string>
+
+    <string name="title_home">Beranda</string>
+    <string name="title_news">Berita</string>
+    <string name="title_vaccines">Daftar Vaksin Covid-19</string>
+    <string name="title_detail_news">Detail Berita</string>
+
+    <string name="lorem">Lorem Ipsum Dolor Sit Amet</string>
+
+    <string name="txt_rsc_papan_informasi">Yuk Lindungi diri dan keluargamu dengan vaksinisasi gratis</string>
+    <string name="txt_rsc_btn_vaccines_list">Macam-Macam Vaksin Covid-19 di Indonesia</string>
+    <string name="txt_rsc_tips">Tips dari Kami</string>
+    <string name="txt_rsc_vaccine">Vaksin %s</string>
+    <string name="txt_rsc_side_effects">Efek paling Umum</string>
+    <string name="txt_rsc_reporter">Reporter : %s</string>
+    <string name="txt_rsc_doses">%sX Dosis</string>
+    <string name="txt_rsc_effectivity">%s Efektifitas</string>
+
+    <string-array name="txt_tips">
+        <item>Hindari Covid 19 untuk menjaga keluarga</item>
+        <item>Cucilah tangan kalian dengan benar</item>
+        <item>Jaga jarak dimanapun dan kapanpun</item>
+        <item>Sebisa mungkin menghindari kerumunan</item>
+        <item>Ikutilah vaksinasi ketika giliranmu telah datang</item>
+        <item>Jangan keluar rumah jika tidak enak badan</item>
+    </string-array>
+</resources>

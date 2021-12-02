@@ -37,10 +37,11 @@ class NewsFragment : Fragment() {
             tvHeadlineTitle.text = headlineNewsData[position].title
             tvHeadlineContent.text = headlineNewsData[position].content
             tvHeadlineInfo.text = headlineNewsData[position].reporter + " - " + headlineNewsData[position].date
+            imgHeadline.setImageResource(headlineNewsData[position].photo)
             cvHeadlineNews.setOnClickListener {
-                val intent = Intent(it.context,DetailNewsActivity::class.java)
-                intent.putExtra(DetailNewsActivity.DATA_NEWS,headlineNewsData)
-                it.context.startActivity(intent)
+                val intent = Intent(context,DetailNewsActivity::class.java)
+                intent.putExtra(DetailNewsActivity.DATA_NEWS,headlineNewsData[position])
+                startActivity(intent)
             }
         }
 

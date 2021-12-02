@@ -2,18 +2,18 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="96dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="10dp"
     app:cardCornerRadius="10dp"
     android:layout_marginBottom="20dp">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="130dp"
-        android:layout_height="96dp"
+        android:layout_height="match_parent"
         app:cardCornerRadius="8dp">
 
         <ImageView
+            android:id="@+id/img_news"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/img_news_1"
@@ -21,7 +21,7 @@
 
     </com.google.android.material.card.MaterialCardView>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="142dp"
@@ -34,9 +34,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/blue_color_1"
-            android:textSize="10sp"
+            android:textSize="14sp"
             android:layout_gravity="top"
             android:fontFamily="@font/poppins_bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             tools:ignore="SmallSp" />
 
         <TextView
@@ -44,10 +46,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:textSize="9sp"
+            android:textSize="12sp"
             android:layout_gravity="center"
             android:maxLines="3"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             tools:ignore="SmallSp" />
 
         <TextView
@@ -55,9 +61,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:textSize="7sp"
+            android:textSize="10sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             tools:ignore="SmallSp" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>

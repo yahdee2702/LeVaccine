@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.idn.levaccine.adapter.VaccineAdapter
+import com.idn.levaccine.data.VaccineData
 import com.idn.levaccine.databinding.ActivityDaftarVaksinBinding
 
 class DaftarVaksinActivity : AppCompatActivity() {
@@ -19,19 +20,15 @@ class DaftarVaksinActivity : AppCompatActivity() {
             setDisplayHomeAsUpEnabled(true)
         }
 
-        val vaccinesList = arrayListOf(
-            "Pfizer",
-            "AstraZeneca",
-            "Moderna",
-            "Sinovac",
-            "Sinopharm",
-            "Janssen",
-            "Convidecia",
-        )
-
         binding.rvVaccines.apply {
             layoutManager = LinearLayoutManager(this.context,LinearLayoutManager.VERTICAL,false)
-            adapter = VaccineAdapter(vaccinesList,getString(R.string.txt_rsc_vaccine))
+            adapter = VaccineAdapter(VaccineData.getVaccinesInfo(),
+                arrayListOf(
+                    getString(R.string.txt_rsc_vaccine),
+                    getString(R.string.txt_rsc_doses),
+                    getString(R.string.txt_rsc_effectivity)
+                )
+            )
         }
     }
 

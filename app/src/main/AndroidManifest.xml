@@ -11,7 +11,8 @@
         android:theme="@style/Theme.LeVaccine">
         <activity
             android:name=".DetailNewsActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.LeVaccine.NoActionBar"/>
         <activity
             android:name=".DaftarVaksinActivity"
             android:exported="true"

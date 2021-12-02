@@ -23,6 +23,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         setSupportActionBar(binding.toolBar)
 
+        supportActionBar?.apply {
+            title = ""
+        }
+
         binding.vpMain.adapter = PageAdapter(this)
         val tabList = arrayOf("Home","News")
 
@@ -37,34 +41,5 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }.attach()
-
-//        binding.mainTabs.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
-//            override fun onTabSelected(tab: TabLayout.Tab?) {
-//                when(tab?.position) {
-//                    0 -> {
-//                        supportActionBar?.apply {
-//                            setDisplayUseLogoEnabled(true)
-//                            setLogo(R.drawable.ic_logo)
-//                            title = ""
-//                        }
-//                    }
-//                    else -> {
-//                        supportActionBar?.apply {
-//                            setDisplayUseLogoEnabled(false)
-//                            title = tabList[tab?.position!!]
-//                        }
-//                    }
-//                }
-//            }
-//
-//            override fun onTabUnselected(tab: TabLayout.Tab?) {
-//
-//            }
-//
-//            override fun onTabReselected(tab: TabLayout.Tab?) {
-//
-//            }
-//
-//        })
     }
 }

@@ -9,7 +9,7 @@ class DetailNewsActivity : AppCompatActivity() {
     private lateinit var binding : ActivityDetailNewsBinding
 
     companion object {
-        val DATA_NEWS = "news"
+        const val DATA_NEWS = "news"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +21,6 @@ class DetailNewsActivity : AppCompatActivity() {
         supportActionBar?.apply {
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
-            title = "Detail"
         }
 
         val newsData = intent.getParcelableExtra<NewsInfo>(DATA_NEWS)
@@ -32,6 +31,8 @@ class DetailNewsActivity : AppCompatActivity() {
                 tvDateDetail.text = newsData.date
                 tvAuthorDetail.text = getString(R.string.txt_rsc_reporter, newsData.reporter)
                 tvContentDetail.text = newsData.content
+                imgNewsDetail.setImageResource(newsData.photo)
+                tvNewsImageInfo.text = newsData.photoInfo
             }
         }
 

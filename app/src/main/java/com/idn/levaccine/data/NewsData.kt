@@ -1,5 +1,7 @@
 package com.idn.levaccine.data
 
+import com.idn.levaccine.R
+
 object NewsData {
     private val titleHeadline = arrayListOf<String>(
         "Gawat! 12 Negara Kemasukan Covid Omicron, Ada Tetangga RI",
@@ -105,6 +107,14 @@ object NewsData {
 
             Tes lebih lanjut akan dilakukan untuk memastikan hal ini. Tetapi, orang-orang terkait kasus sudah dikarantina.
         """.trimIndent(),
+    )
+
+    private val photoHeadline = intArrayOf(
+        R.drawable.img_news_headline_1
+    )
+
+    private val photoInfoHeadline = arrayListOf<String>(
+        "Ilustrasi Bendera Negara (REUTERS/Juan Carlos Ulate)"
     )
 
     private val titleAll = arrayListOf<String>(
@@ -297,6 +307,20 @@ object NewsData {
         """.trimIndent()
     )
 
+    private val photoAll = intArrayOf(
+        R.drawable.img_news_1,
+        R.drawable.img_news_2,
+        R.drawable.img_news_3,
+        R.drawable.img_news_4
+    )
+
+    private val photoInfoAll = arrayListOf<String>(
+        "Luhut Binsar Pandjaitan. (Suara.com)",
+        "Kompas.com",
+        "Bandara di AS membeludak akibat libur Natal. ©AFP PHOTO",
+        "Ilustrasi. (Istockphoto/ShutterOK)",
+    )
+
     fun getHeadlineInfo() : ArrayList<NewsInfo> {
         val list = arrayListOf<NewsInfo>()
 
@@ -308,6 +332,8 @@ object NewsData {
                     reporterHeadline[i],
                     categoryHeadline[i],
                     contentHeadline[i],
+                    photoHeadline[i],
+                    photoInfoHeadline[i]
                 )
             )
         }
@@ -326,6 +352,8 @@ object NewsData {
                     reporterAll[i],
                     categoryAll[i],
                     contentAll[i],
+                    photoAll[i],
+                    photoInfoAll[i]
                 )
             )
         }

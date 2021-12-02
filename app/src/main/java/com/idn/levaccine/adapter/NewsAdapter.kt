@@ -21,6 +21,7 @@ class NewsAdapter(private val newsInfos: ArrayList<NewsInfo>) : RecyclerView.Ada
             tvNewsTitle.text = newsInfos[position].title
             tvNewsCategory.text = newsInfos[position].category
             tvNewsInfo.text = newsInfos[position].reporter + " - " + newsInfos[position].date
+            imgNews.setImageResource(newsInfos[position].photo)
         }
         holder.itemView.setOnClickListener {
             val intent = Intent(it.context,DetailNewsActivity::class.java)

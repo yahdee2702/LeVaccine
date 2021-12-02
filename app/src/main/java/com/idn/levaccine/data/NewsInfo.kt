@@ -8,5 +8,7 @@ import kotlinx.parcelize.Parcelize
     val date : String,
     val reporter : String,
     val category : String,
-    val content : String
+    val content : String,
+    val photo : Int,
+    val photoInfo : String
 ) : Parcelable

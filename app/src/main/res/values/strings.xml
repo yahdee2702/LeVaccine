@@ -3,24 +3,26 @@
 
     <string name="title_home">Home</string>
     <string name="title_news">News</string>
-    <string name="title_vaccines">Daftar Vaksin Covid-19</string>
-    <string name="title_detail_news">Detail</string>
+    <string name="title_vaccines">List of Covid-19 Vaccines</string>
+    <string name="title_detail_news">News Detail</string>
 
     <string name="lorem">Lorem Ipsum Dolor Sit Amet</string>
 
-    <string name="txt_rsc_papan_informasi">Yuk Lindungi diri dan keluargamu dengan vaksinisasi gratis</string>
-    <string name="txt_rsc_btn_vaccines_list">Macam-Macam Vaksin Covid-19 di Indonesia</string>
-    <string name="txt_rsc_tips">Tips dari Kami</string>
-    <string name="txt_rsc_vaccine">Vaksin %s</string>
-    <string name="txt_rsc_side_effects">Efek paling Umum</string>
+    <string name="txt_rsc_papan_informasi">Lets protect your family with free vaccines</string>
+    <string name="txt_rsc_btn_vaccines_list">Kinds of Covid-19 Vaccines in Indonesia</string>
+    <string name="txt_rsc_tips">Tips from Us</string>
+    <string name="txt_rsc_vaccine">%s Vaccine</string>
+    <string name="txt_rsc_side_effects">Common effects</string>
     <string name="txt_rsc_reporter">Reporter : %s</string>
+    <string name="txt_rsc_doses">%sX Doses</string>
+    <string name="txt_rsc_effectivity">%s Effectivity</string>
 
     <string-array name="txt_tips">
-        <item>Hindari Covid 19 untuk menjaga keluarga</item>
-        <item>Cucilah tangan kalian dengan benar</item>
-        <item>Jaga jarak dimanapun dan kapanpun</item>
-        <item>Sebisa mungkin menghindari kerumunan</item>
-        <item>Ikutilah vaksinasi ketika giliranmu telah datang</item>
-        <item>Jangan keluar rumah jika tidak enak badan</item>
+        <item>Avoid Covid-19 to protect your family</item>
+        <item>Wash your hand properly</item>
+        <item>Keep your distance wherever and whenever</item>
+        <item>Avoid crowds as much as possible</item>
+        <item>Get vaccinated when it is your turn</item>
+        <item>Do not leave your house if you are not feeling well</item>
     </string-array>
 </resources>

@@ -99,9 +99,9 @@ object VaccineData {
             var txtEffect = ""
             efekSamping[i].forEachIndexed {i2,s2 ->
                 if(i2 < efekSamping.size-1) {
-                    txtEffect += "* " + s2
+                    txtEffect += "•   " + s2 + "\n"
                 } else{
-                    txtEffect += "* " + s2 + "\n"
+                    txtEffect += "•   " + s2
                 }
             }
 
