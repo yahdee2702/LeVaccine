@@ -39,6 +39,8 @@
             android:fontFamily="@font/poppins_bold"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:autoSizeTextType="uniform"
+            tools:targetApi="o"
             tools:ignore="SmallSp" />
 
         <TextView
@@ -51,10 +53,12 @@
             android:maxLines="3"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_medium"
+            android:autoSizeTextType="uniform"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="SmallSp" />
+            tools:ignore="SmallSp"
+            tools:targetApi="o" />
 
         <TextView
             android:id="@+id/tv_news_info"
@@ -63,6 +67,8 @@
             android:layout_gravity="bottom"
             android:textSize="10sp"
             android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            tools:targetApi="o"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:ignore="SmallSp" />
