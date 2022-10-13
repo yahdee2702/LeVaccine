@@ -1,4 +1,2 @@
 # LeVaccine
-Initial commit
-
-Hello gaes, waktunya bikin project untuk SKL.
+An app to show a list of vaccines.
