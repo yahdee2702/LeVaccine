@@ -15,7 +15,7 @@
         <entry key="..\:/Project SKL/LeVaccine/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Project SKL/LeVaccine/app/src/main/res/layout/activity_splash_screen.xml" value="0.18" />
         <entry key="..\:/Project SKL/LeVaccine/app/src/main/res/layout/bottom_sheet_vaccine_info.xml" value="0.67" />
-        <entry key="..\:/Project SKL/LeVaccine/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Project SKL/LeVaccine/app/src/main/res/layout/fragment_home.xml" value="0.18" />
         <entry key="..\:/Project SKL/LeVaccine/app/src/main/res/layout/fragment_news.xml" value="0.33" />
         <entry key="..\:/Project SKL/LeVaccine/app/src/main/res/layout/row_item_news.xml" value="0.3002832861189802" />
         <entry key="..\:/Project SKL/LeVaccine/app/src/main/res/layout/row_item_tips.xml" value="0.25" />
@@ -23,6 +23,10 @@
         <entry key="..\:/Project SKL/LeVaccine/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2125" />
         <entry key="..\:/Project SKL/LeVaccine/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.17447916666666666" />
         <entry key="..\:/Project SKL/LeVaccine/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22512820512820514" />
+        <entry key="..\:/android_projects/LeVaccine/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
+        <entry key="..\:/android_projects/LeVaccine/app/src/main/res/layout/fragment_home.xml" value="0.19008264462809918" />
+        <entry key="..\:/android_projects/LeVaccine/app/src/main/res/layout/row_item_news.xml" value="0.1" />
+        <entry key="..\:/android_projects/LeVaccine/app/src/main/res/layout/row_item_vaccine.xml" value="0.1" />
       </map>
     </option>
   </component>
